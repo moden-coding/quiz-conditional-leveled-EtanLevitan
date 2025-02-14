@@ -27,21 +27,26 @@ public class App {
         int num1 = Integer.valueOf(scanner.nextLine());
         if (num1 < 0 && num1 > 100) {
             System.out.println("Wrong number!");
-        }else if (num1 % num1 == 0 && num1 % 1 == 0 && num1 % 2 > 0 || num1 == 2 && num1 % 3 > 0 || num1 == 3 && num1 % 5 > 0 || num1 == 5 && num1 % 7 > 0 || num1 == 7) {
-            System.out.println("The number is prime");
-        }else if (num1 % 15 == 0){
-            System.out.println("The number is dvisible by both 3 and 5");
-        }else if (num1 % 5 == 0) {
-            System.out.println("The number is divisable by 5");
-        }else if (num1 % 3 == 0){
-            System.out.println("The number is dvisible by 3");
-        }else if (num1 % 2 == 0) {
+
+
+        }if (num1 % 2 == 0) {
             System.out.println("The number is even");
-        }
-        else {
+        }else {
             System.out.println("The number is odd");
         }
 
+    if (num1 % 15 == 0){
+        System.out.println("The number is dvisible by both 3 and 5");
+    }else if (num1 % 5 == 0) {
+        System.out.println("The number is divisable by 5");
+    }else if (num1 % 3 == 0){
+        System.out.println("The number is dvisible by 3");
+    }
+
+        if ((num1 % num1 == 0 && num1 % 1 == 0) && (num1 % 2 > 0 || num1 == 2) && (num1 % 3 > 0 || num1 == 3) && (num1 % 5 > 0 || num1 == 5) && (num1 % 7 > 0 || num1 == 7)) {
+            System.out.println("The number is prime");
+        }else if (num1 % 15 == 0){
         
+    }
     }
 }
